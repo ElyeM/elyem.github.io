@@ -1,6 +1,22 @@
-This is an iframe
-<br>
-<iframe style="
-    height: 90%;
-    width: 90%;" src="https://www.bhphotovideo.com/test.pdf"></iframe>
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0];
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.baseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                }
+                else {
+                    window.baseUrl = locationWithNoQuery.replace(/(p|page)\/[a-z0-9-]*\/?$/, '');
+                }
+                document.write("<base href='" + window.baseUrl + "' />");
+            })();
+        </script>
+
+</head>
+Hello World!
+</html>
