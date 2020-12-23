@@ -1,24 +1,171 @@
-<!doctype html>
-<html lang="en" class="view html5-player">
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Access to this page has been denied.</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+            color: #000;
+        }
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        a {
+            color: #c5c5c5;
+            text-decoration: none;
+        }
 
-        <script type="text/javascript">
-            (function () {
-                var locationWithNoQuery = document.location.href.split('?')[0];
-                if (document.location.pathname.match(/\.html$/)) {
-                    window.baseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
-                }
-                else {
-                    window.baseUrl = locationWithNoQuery.replace(/(p|page)\/[a-z0-9-]*\/?$/, '');
-                }
-                document.write("<base href='" + window.baseUrl + "' />");
-            })();
-        </script>
+        .container {
+            align-items: center;
+            display: flex;
+            flex: 1;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 100%;
+        }
 
-</head>
-Hello World!
+        .container > div {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container > div > div {
+            display: flex;
+            width: 80%;
+        }
+
+        .customer-logo-wrapper {
+            padding-top: 2rem;
+            flex-grow: 0;
+            background-color: #fff;
+            visibility: hidden;
+        }
+
+        .customer-logo {
+            border-bottom: 1px solid #000;
+        }
+
+        .customer-logo > img {
+            padding-bottom: 1rem;
+            max-height: 50px;
+            max-width: 100%;
+        }
+
+        .page-title-wrapper {
+            flex-grow: 2;
+        }
+
+        .page-title {
+            flex-direction: column-reverse;
+        }
+
+        .content-wrapper {
+            flex-grow: 5;
+        }
+
+        .content {
+            flex-direction: column;
+        }
+
+        .page-footer-wrapper {
+            align-items: center;
+            flex-grow: 0.2;
+            background-color: #000;
+            color: #c5c5c5;
+            font-size: 70%;
+        }
+
+        @media (min-width: 768px) {
+            html, body {
+                height: 100%;
+            }
+        }
+    </style>
+    <!-- Custom CSS -->
     
-    <a src="https://www.bhphotovideo.com/bnh/controller/home/?0=json&A=SubmitReview&0="><a/>
+<script async src='/cdn-cgi/bm/cv/2140143823/api.js'></script></head>
+
+<body>
+<section class="container">
+    <div class="customer-logo-wrapper">
+        <div class="customer-logo">
+            <img src="" alt="Logo"/>
+        </div>
+    </div>
+    <div class="page-title-wrapper">
+        <div class="page-title">
+            <h1>Please verify you are a human</h1>
+        </div>
+    </div>
+    <div class="content-wrapper">
+        <div class="content">
+
+            <div id="px-captcha">
+            </div>
+            <p>
+                Access to this page has been denied because we believe you are using automation tools to browse the
+                website.
+            </p>
+            <p>
+                This may happen as a result of the following:
+            </p>
+            <ul>
+                <li>
+                    Javascript is disabled or blocked by an extension (ad blockers for example)
+                </li>
+                <li>
+                    Your browser does not support cookies
+                </li>
+            </ul>
+            <p>
+                Please make sure that Javascript and cookies are enabled on your browser and that you are not blocking
+                them from loading.
+            </p>
+            <p>
+                Reference ID: #b14f1d10-4559-11eb-a7bf-3741d40703a4
+            </p>
+        </div>
+    </div>
+    <div class="page-footer-wrapper">
+        <div class="page-footer">
+            <p>
+                Powered by
+                <a href="https://www.perimeterx.com/whywasiblocked">PerimeterX</a>
+                , Inc.
+            </p>
+        </div>
+    </div>
+</section>
+<!-- Px -->
+<script>
+    window._pxAppId = 'PX3D8mkYG1';
+    window._pxJsClientSrc = '/3D8mkYG1/init.js';
+    window._pxFirstPartyEnabled = true;
+    window._pxVid = 'b35cb2a1-3e4e-11eb-8d5d-4f508721dc86';
+    window._pxUuid = 'b14f1d10-4559-11eb-a7bf-3741d40703a4';
+    window._pxHostUrl = '/3D8mkYG1/xhr';
+</script>
+<script>
+    var s = document.createElement('script');
+    s.src = '/3D8mkYG1/captcha/captcha.js?a=c&u=b14f1d10-4559-11eb-a7bf-3741d40703a4&v=b35cb2a1-3e4e-11eb-8d5d-4f508721dc86&m=0';
+    var p = document.getElementsByTagName('head')[0];
+    p.insertBefore(s, null);
+    if (true) {
+        s.onerror = function () {
+            s = document.createElement('script');
+            var suffixIndex = '/3D8mkYG1/captcha/captcha.js?a=c&u=b14f1d10-4559-11eb-a7bf-3741d40703a4&v=b35cb2a1-3e4e-11eb-8d5d-4f508721dc86&m=0'.indexOf('captcha.js');
+            var temperedBlockScript = '/3D8mkYG1/captcha/captcha.js?a=c&u=b14f1d10-4559-11eb-a7bf-3741d40703a4&v=b35cb2a1-3e4e-11eb-8d5d-4f508721dc86&m=0'.substring(suffixIndex);
+            s.src = '//captcha.px-cdn.net/PX3D8mkYG1/' + temperedBlockScript;
+            p.parentNode.insertBefore(s, p);
+        };
+    }
+</script>
+<!-- Custom Script -->
+
+<script type="text/javascript">(function(){window['__CF$cv$params']={r:'6064fc335adb3b81',m:'5a22b09c27e726bccbf71341c5b21017f8fa55a5-1608756943-1800-ATYXMWpJcUwrkfFcJfdrhbagS+7T6Uh3SwVbQhaI2l4pBAa/UJigKCTew+FP/NTBozc5xWs+ZpOeOk14757d9T8zVjVk0oi3s2GSvI3U9ns32TcDN+r0O1Dj4cAwgsrg5Q==',s:[0x9850b1398d,0x5b2928785a],}})();</script></body>
 </html>
